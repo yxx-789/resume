@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>邢耀 · AI 产品经理</title>
+  <meta name="description" content="邢耀 — AI 产品经理，百度 AI 产品实习，独立全栈开发 AI 创作工作台。">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@300;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ═══════════════ 漂浮光点背景 ═══════════════ -->
+<div class="bg-dots" aria-hidden="true">
+  <span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span>
+  <span class="dot d4"></span><span class="dot d5"></span><span class="dot d6"></span>
+</div>
+
+<!-- ═══════════════ 顶部导航 ═══════════════ -->
+<nav class="navbar">
+  <div class="nav-inner">
+    <div class="nav-brand">邢耀<span class="dot">.</span></div>
+    <div class="nav-links" id="navLinks">
+      <a href="#about" data-view="about">关于我</a>
+      <a href="#education" data-view="education">教育背景</a>
+      <a href="#experience" data-view="experience">工作经历</a>
+      <a href="#works" data-view="works">个人作品</a>
+      <a href="#skills" data-view="skills">技能爱好</a>
+    </div>
+    <div class="nav-contact">
+      <a href="tel:15171387068" title="电话 15171387068" aria-label="电话">📞</a>
+      <a href="mailto:yx71387068@163.com" title="邮箱 yx71387068@163.com" aria-label="邮箱">✉️</a>
+      <a href="https://github.com/yxx-789" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">🐙</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════ ① 关于我 ═══════════════ -->
+<section class="view" id="about">
+  <div class="glass hero reveal">
+    <div class="hero-photos">
+      <img src="assets/小时候1.jpg" alt="小时候 · 十堰">
+      <img src="assets/小时候照片2.jpg" alt="童年 · 家乡">
+      <img src="assets/长大照片.jpg" alt="现在 · 邢耀">
+    </div>
+    <div class="name">邢耀</div>
+    <div class="role">AI 产品经理</div>
+    <div class="typing-line"><span class="typing-target" id="typeTarget"></span><span class="caret" aria-hidden="true">▌</span></div>
+    <div class="actions">
+      <a class="btn btn-accent" href="assets/产品-中南财经政法大学-邢耀.pdf" download>📄 下载简历 / 保存 PDF</a>
+      <button class="btn btn-ghost" onclick="openModal()">📮 联系我</button>
+    </div>
+    <div class="contacts">
+      <span>📞 15171387068</span>
+      <span>✉️ <a href="mailto:yx71387068@163.com">yx71387068@163.com</a></span>
+      <span>🐙 <a href="https://github.com/yxx-789" target="_blank" rel="noopener">github.com/yxx-789</a></span>
+    </div>
+  </div>
+
+</section>
+
+<!-- ═══════════════ ② 教育背景 ═══════════════ -->
+<section class="view" id="education">
+  <div class="glass">
+    <h2 class="section-title"><span class="icon">🎓</span> 教育背景</h2>
+    <div class="edu-wrap">
+      <div class="edu-card reveal">
+        <div class="illus" style="background-image:url('assets/中南财经政法大学.jpg');background-size:cover;background-position:center;">
+          <span class="illus-tint">🎓 硕士 · 推免</span>
+        </div>
+        <div class="body">
+          <div class="k">硕士 · 推免</div>
+          <div class="v"><strong>中南财经政法大学</strong></div>
+          <div style="font-size:0.88rem;color:var(--ink-soft);">税务（大数据与税收征管）</div>
+          <div class="meta">2025.09 — 2027.06</div>
+        </div>
+      </div>
+      <div class="edu-card reveal">
+        <div class="illus" style="background-image:url('assets/学校图片2.jpg');background-size:cover;background-position:center;">
+          <span class="illus-tint">🎓 本科</span>
+        </div>
+        <div class="body">
+          <div class="k">本科</div>
+          <div class="v"><strong>中南财经政法大学</strong></div>
+          <div style="font-size:0.88rem;color:var(--ink-soft);">税收学 · GPA 3.86/4（前 10%）</div>
+          <div class="meta">2021.09 — 2025.06 · CET-6：500</div>
+        </div>
+      </div>
+    </div>
+    <div class="food-block reveal">
+      <div class="food-head">🍜 中南财经政法大学 · 财大小吃街</div>
+      <div class="food-strip">
+        <figure class="food-photo"><img src="assets/美食1.jpg" alt="财大小吃街美食"></figure>
+        <figure class="food-photo"><img src="assets/美食2.jpg" alt="财大小吃街美食"></figure>
+        <figure class="food-photo"><img src="assets/美食3.jpg" alt="财大小吃街美食"></figure>
+        <figure class="food-photo"><img src="assets/美食4.jpg" alt="财大小吃街美食"></figure>
+      </div>
+      <div class="food-tag">在学校学到的东西多不多先不说，在学校小吃街学成了小吃家～</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ ③ 工作经历（时间线） ═══════════════ -->
+<section class="view" id="experience">
+  <div class="glass">
+    <h2 class="section-title"><span class="icon">💼</span> 工作经历</h2>
+    <div class="timeline">
+
+      <div class="tl-item reveal">
+        <div class="tl-row">
+          <div class="tl-left">
+            <div class="tl-card">
+              <div class="tl-head">
+                <span class="logo"><img src="assets/文心.webp" alt="文心"></span>
+                <span class="title">百度</span>
+                <span class="date">2026.05 — 至今</span>
+              </div>
+              <div class="tl-sub">大模型产品 · 基础模型研发部</div>
+              <ul>
+                <li><strong>评估 Checklist 质量 Skill</strong>：针对 checklist 质量参差、人工复核成本高的问题，开发标准化审计 Skill，设计 13 条执行策略，构建「数据标准化提取—多 Agent 并行初筛—跨行复核—结构化报告输出」四阶段流水线，覆盖 26 维度、9 类问题体系并要求证据逐字锚定；检出问题与人工一致率 89.3%，checkpoint 维度一致率 96.8%</li>
+                <li><strong>评估集建设流程自动化</strong>：独立搭建端到端自动挖掘优质 query 的 Pipeline，分析归纳 10000+ 候选 Case，梳理出覆盖各能力维度的多轴关键词检索矩阵；引入 VLM 模型替代人工逐图扒题，实现「图片→逐图转录→题目分组→Query 提取→评测价值筛选」入库，每小时产出约 30 条候选，后续扩展至知乎等多平台</li>
+                <li><strong>开源 Benchmark 调研</strong>：主导 HELMET-summ 评测本地复现与指标解析，核验发现其 Gold 标准缺陷（各截断长度均用完整原文答案打分，导致 Recall 系统性偏低）；基于原始抽样 100 题重标「可见文本锚定」Gold 后接入评估框架，完成模型摸底并并入题库</li>
+              </ul>
+              <div class="skillpoints"><span>Benchmark 评估</span><span>数据 Pipeline</span><span>Skill 设计</span><span>模型评测</span></div>
+            </div>
+          </div>
+          <div class="tl-right">
+            <div class="tl-photo">
+              <img src="assets/百度文心.png" alt="百度文心 · 二进宫">
+              <div class="cap">二进宫百度！</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-row">
+          <div class="tl-left">
+            <div class="tl-card">
+              <div class="tl-head">
+                <span class="logo"><img src="assets/百度.webp" alt="百度"></span>
+                <span class="title">百度</span>
+                <span class="date">2026.02 — 2026.05</span>
+              </div>
+              <div class="tl-sub">AI 产品 · 作者产品组 / AI 客服方向</div>
+              <ul>
+                <li><strong>意图识别模型训推</strong>：调研主流方案（微调 vs prompt-based 分类），选定 Qwen3.5-1.7B 热启 RL 路线并给出速度/准确率/成本三角权衡的选型依据；负责意图一二级标签体系搭建与 prompt 标准化，调用 Opus 4.6 / GPT 5.4 / Gemini 3.1 Pro 对 5000+ query 交叉标注（含上下文/无上下文两类），不一致处人工校验，交付训练方案与标注数据；上线后准确率提升、响应速度显著改善</li>
+                <li><strong>「猜你想问」「千人千面」</strong>：针对用户 query 非标、20% 首轮直转人工的痛点，将静态高频 FAQ 迭代为动态「猜你想问」前置收敛 + 个性化 Push 引导，替代发散输入；参与建立「分层接入、按需使用、动态调权」的用户变量调用体系，避免全量信息灌入引发噪声；最终首问解决率提升 6%、转人工率下降 7%</li>
+                <li><strong>AI 客服回复自动巡检</strong>：针对 AI 回复质检依赖低频人工抽检的问题，搭建「数据清洗—规则过滤—软评分—聚类抽样—AI 巡检」链路与 bad case 归因标准，将问题归因至客服团队与业务团队，推动 AI 客服优化与业务整改双向闭环</li>
+              </ul>
+              <div class="skillpoints"><span>意图识别</span><span>数据归因</span><span>Prompt 调优</span><span>Skill 设计</span></div>
+            </div>
+          </div>
+          <div class="tl-right">
+            <div class="tl-photo">
+              <img src="assets/百家号上new.png" alt="百度百家号 · 作者产品组">
+              <img src="assets/百度百家号下半部分.png" alt="百度百家号 · 下半部分">
+              <div class="cap">疯狂攒简单币！</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-row">
+          <div class="tl-left">
+            <div class="tl-card">
+              <div class="tl-head">
+                <span class="logo"><img src="assets/小红书.png" alt="小红书"></span>
+                <span class="title">小红书</span>
+                <span class="date">2025.11 — 2026.02</span>
+              </div>
+              <div class="tl-sub">审核大模型策略运营（交易笔记直播组）</div>
+              <ul>
+                <li><strong>策略效果监控</strong>：新增/维护 15 条笔记直播中生态画风、虚假宣传体裁的策略，监控人审率/误伤率/漏放率水位，负责上线策略的 VVR 归因分析及误伤分析，根据漏放/误伤案例迭代优化策略；工作期间机审策略整体漏放率 5%、送审审出率 60%</li>
+                <li><strong>垂类模型搭建</strong>：在自研平台搭建 3 条审核工作流（2 个拒绝模型 + 1 个 F1 模型），基于规则拆解进行链路搭建、Prompt 调优、参数配置、测试优化及上线，日均处理量级 3000+，F1 模型 Precision 97%、Recall 98%，拒绝模型准确率均达 95%</li>
+                <li><strong>产品运营探索</strong>：参与审核规则的原子化拆解，绘制审核能力图谱并推进「审核数字人」产品设计，通过工作流编排与模型串联替代部分人工审核决策，输出 4 份算法/产品提需，已实现虚假宣传部分审核能力产品化落地，预计人审工时压降 30%</li>
+              </ul>
+              <div class="skillpoints"><span>策略运营</span><span>模型工作流</span><span>Prompt 调优</span><span>产品化</span></div>
+            </div>
+          </div>
+          <div class="tl-right">
+            <div class="tl-photo">
+              <img src="assets/小红书上.png" alt="小红书 · 实习">
+              <div class="cap">收到小红箱一个～</div>
+            </div>
+            <div class="tl-strip">
+              <img src="assets/小红书下.jpg" alt="小红书 · 下">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-row">
+          <div class="tl-left">
+            <div class="tl-card">
+              <div class="tl-head">
+                <span class="logo"><img src="assets/小药药.webp" alt="小药药"></span>
+                <span class="title">小药药</span>
+                <span class="date">2025.08 — 2025.11</span>
+              </div>
+              <div class="tl-sub">数据分析（平台活动组）</div>
+              <ul>
+                <li><strong>指标监控</strong>：每日/每周提取并整理平台交易的核心业务数据（主要负责用户侧交易转化漏斗），针对核心指标异动按设备、渠道、板块、品类、省份等多维度下钻，初步定位波动原因，并协助完成每周数据简报的数据整理与图表制作</li>
+                <li><strong>补贴策略</strong>：协助跟踪「消费返」活动的日常效果数据（领券率、核销率、补贴率），按活跃度、下单行为、消费变化拆解不同群体反馈，分析竞对平台发券策略，针对券门槛与金额进行组合 A/B 测试，持续优化不同人群的最优策略</li>
+                <li><strong>专项分析</strong>：针对搜索 2 号位固定插入高毛利「批购包邮」商品导致点击率不佳、浪费优质流量的问题展开专项研究，通过实验对比点击率、转化率及毛利，量化原有强制策略导致的「位置效能损耗」，并辅助设计「引入价格竞争力阈值」的优化方案</li>
+              </ul>
+              <div class="skillpoints"><span>漏斗分析</span><span>A/B 测试</span><span>专项研究</span></div>
+            </div>
+          </div>
+          <div class="tl-right">
+            <div class="tl-photo">
+              <img class="tl-img-sm" src="assets/小药药时期用我哥的娃一岁了.jpg" alt="小药药时期 · 我哥的娃一岁了">
+              <div class="cap">晋升小爹～</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-row">
+          <div class="tl-left">
+            <div class="tl-card">
+              <div class="tl-head">
+                <span class="logo"><img src="assets/货拉拉.jpg" alt="货拉拉"></span>
+                <span class="title">货拉拉</span>
+                <span class="date">2025.04 — 2025.08</span>
+              </div>
+              <div class="tl-sub">数据分析（财务 BP 组）</div>
+              <ul>
+                <li><strong>经营分析</strong>：聚焦司机注册—认证—保证金—完单—留存链路，跟踪渠道投放、邀约、培训师、转介绍、补贴等收司机成本并量化 CAC；结合订单表与运力数据测算司机 LTV 及 T+30 GTV ROI、T+30 GP ROI 等钱效指标，针对异常波动进行多维下钻异动汇报</li>
+                <li><strong>专项分析</strong>：复现用户潜在需求挖掘（订单备注）专项，挖掘订单备注信息、识别归纳用户需求，与现有产品功能对比分析用户未被满足的需求，尝试推进产品与服务的功能优化，以提升用户下单需求与司机接单意愿，提高 T+30 GTV ROI</li>
+              </ul>
+              <div class="skillpoints"><span>成本量化</span><span>文本分析</span><span>ROI 测算</span></div>
+            </div>
+          </div>
+          <div class="tl-right">
+            <div class="tl-photo">
+              <img src="assets/货拉拉部分.png" alt="货拉拉 · 实习">
+              <div class="cap">实习生也得倡廉～</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-row">
+          <div class="tl-left">
+            <div class="tl-card">
+              <div class="tl-head">
+                <span class="logo"><img src="assets/用友.jpg" alt="用友"></span>
+                <span class="title">用友</span>
+                <span class="date">2024.10 — 2025.03</span>
+              </div>
+              <div class="tl-sub">产品经理</div>
+              <ul>
+                <li><strong>需求梳理</strong>：参与「合并报表」模块需求细化，通过分析历史审计报告及访谈纪要，独立梳理 10 余家子公司与集团间 5 类核心科目映射关系及 3 类常见内部交易抵消场景，形成业务规则清单，作为 PRD 附件逻辑依据</li>
+                <li><strong>验证与迭代支持</strong>：协助设计「一键出表」功能测试用例并参与功能测试，基于测试反馈优化报表生成状态提示文案及组件原型；系统上线后搭建需求池，归类录入并初步分级 12 条用户反馈，支持后续版本迭代</li>
+              </ul>
+              <div class="skillpoints"><span>需求分析</span><span>PRD</span><span>功能测试</span></div>
+            </div>
+          </div>
+          <div class="tl-right">
+            <div class="tl-photo">
+              <img src="assets/用友时期.png" alt="用友 · 实习时期">
+              <div class="cap">用友 · 实习时期</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ ④ 个人作品 ═══════════════ -->
+<section class="view" id="works">
+  <div class="featured reveal">
+    <span class="badge">个人作品 · 线上可体验</span>
+    <h3>AI 小说 &amp; 短剧创作工作台</h3>
+    <div class="sub">独立全栈项目 · vibe coding · FastAPI / React / PostgreSQL / LLM 应用</div>
+    <p class="desc">
+      独立全栈 AI 创作工作台：覆盖灵感采集 → 项目创建 → 世界观/大纲 → 目录 →
+      章节生成 → 短剧改编 → 分镜脚本 → 多格式导出的完整链路。
+      自研三级记忆系统（单章 / 篇章 / 全书摘要）维持长程一致性，配合伏笔台账、
+      角色信息约束在生成时注入，显著减少模型幻觉与逻辑前后矛盾；
+      接入小红书 MCP 热点采集器，对热点笔记采集、过滤、分类并输出一段式创作灵感提示，
+      工作台内置项目级 AI 助手辅助创作。330+ 自动化测试，Docker Compose 部署。
+    </p>
+    <div class="links">
+      <a class="btn btn-primary" href="http://8.221.116.98" target="_blank" rel="noopener">🚀 在线体验</a>
+      <a class="btn btn-ghost" href="https://github.com/yxx-789/novel_drama" target="_blank" rel="noopener">源码</a>
+    </div>
+    <div class="shot-grid">
+      <div class="shot-card">
+        <img src="assets/login.png" alt="AI 创作工作台 · 登录界面截图">
+        <div class="cap">工作台 · 登录界面（线上可体验）</div>
+      </div>
+      <div class="shot-card">
+        <img src="assets/短剧脚本生成的图片.jpg" alt="AI 创作工作台 · 短剧脚本生成画面">
+        <div class="cap">工作台产出 · 短剧脚本生成的画面</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="glass">
+    <h2 class="section-title"><span class="icon">🛠</span> 项目经历</h2>
+
+    <div class="project-grid">
+      <div class="project-card reveal" data-cat="eval">
+        <div class="pc-top">
+          <span class="pc-emoji">⛏️</span>
+          <div class="pc-head">
+            <div class="pc-title">小红书 query 挖掘筛选 Pipeline</div>
+            <div class="pc-meta">百度 · 文心基模组 · 独立搭建并开源</div>
+          </div>
+        </div>
+        <ul>
+          <li><strong>自动挖掘（xhs-query-go）</strong>：多轴关键词矩阵 + VLM 视觉流水线，实现「图片→逐图转录→题目分组→Query 提取→评测价值筛选」入库，单轮 50 篇笔记、200+ 图</li>
+          <li><strong>两阶段筛选（eval-query-screening）</strong>：query 本体初筛 + 多模型回复验证 + 三维评分（高 / 难 / 优质），87 能力维度繁简归一化</li>
+          <li><strong>规模化验证</strong>：32 组配置、22+ 领域、7000+ 数据，支撑基模评估集建设</li>
+        </ul>
+        <div class="pc-tags"><span>数据挖掘</span><span>VLM</span><span>Benchmark</span></div>
+        <div class="pc-links">
+          <a class="btn btn-ghost" href="https://github.com/yxx-789/xhs-query-go" target="_blank" rel="noopener">xhs-query-go ↗</a>
+          <a class="btn btn-ghost" href="https://github.com/yxx-789/eval-query-screening" target="_blank" rel="noopener">eval-query-screening ↗</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-cat="data">
+        <div class="pc-top">
+          <span class="pc-emoji">📊</span>
+          <div class="pc-head">
+            <div class="pc-title">税务大数据分析与风险洞察实战</div>
+            <div class="pc-meta">税收信息化教材编撰 · 2024.09 至今</div>
+          </div>
+        </div>
+        <ul>
+          <li><strong>RAG 工作流搭建</strong>：搭建基于简历和笔试结果判断「人员费用能否加计扣除」的拒绝模型，基于 GPU 云服务器，Docker 部署 Dify，集成 Ollama 本地化部署大模型（Qwen-14B 等），结合税法及政策内容构建知识库；经多轮样本测试，对提示词工程（PE）与模型参数持续迭代优化，输出「事实匹配 — 条款引用 — 明确结论」的拒绝模型（漏放率 5%），后续计划结合其他板块做复杂判别</li>
+          <li><strong>多轮税务问答机器人</strong>：基于 LangGraph 搭建多轮次增值税问答工作流，围绕税法条款、业务口径与典型咨询场景设计检索 / 记忆 / 推理 / 回复链路，结合税务知识库与多轮对话状态管理，提升复杂税务问题下的回答一致性、可追溯性与结构化输出能力</li>
+          <li><strong>智能文献综述撰写工作流</strong>：搭建基于 RAG 检索的文献综述工作流，设计「文献召回 — 要点抽取 — 主题聚合 — 综述生成」链路，支持针对指定主题快速生成结构化文献综述草稿，提升资料整理与初稿撰写效率</li>
+        </ul>
+        <div class="pc-tags"><span>RAG</span><span>LangGraph</span><span>Dify · Ollama</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ ⑤ 技能爱好 ═══════════════ -->
+<section class="view" id="skills">
+  <div class="glass ability reveal">
+    <h2 class="section-title"><span class="icon">🧰</span> 技术栈</h2>
+    <div class="group">
+      <div class="group-label">工具</div>
+      <div class="tags">
+        <span class="tag">Claude Code</span>
+        <span class="tag">Codex</span>
+        <span class="tag">Hermes</span>
+        <span class="tag">PyCharm</span>
+        <span class="tag">Obsidian 知识管理</span>
+      </div>
+    </div>
+    <div class="group">
+      <div class="group-label">编程语言</div>
+      <div class="tags">
+        <span class="tag">Python</span>
+        <span class="tag">HTML</span>
+        <span class="tag">TypeScript</span>
+      </div>
+    </div>
+    <div class="group">
+      <div class="group-label">产品 / 数据</div>
+      <div class="tags">
+        <span class="tag">需求分析与 PRD</span>
+        <span class="tag">A/B 测试</span>
+        <span class="tag">数据分析 / 漏斗</span>
+        <span class="tag">监控看板</span>
+        <span class="tag">原型设计</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="glass">
+    <h2 class="section-title"><span class="icon">🎮</span> 技能 · 爱好</h2>
+    <div class="hobby-cards">
+      <div class="hobby-card reveal">
+        <div class="hobby-img"><img src="assets/王者荣耀.jpg" alt="王者荣耀"></div>
+        <div class="name">王者荣耀</div>
+        <div class="note">享受策略与团队配合</div>
+      </div>
+      <div class="hobby-card reveal">
+        <div class="hobby-img"><img src="assets/量化挖因子经历.jpg" alt="量化因子挖掘"></div>
+        <div class="name">量化因子挖掘</div>
+        <div class="note">数据驱动 · 因子研究</div>
+      </div>
+      <div class="hobby-card reveal">
+        <div class="hobby-img"><img src="assets/篮球.jpg" alt="篮球"></div>
+        <div class="name">篮球</div>
+        <div class="note">「星火杯」团队一等奖</div>
+      </div>
+      <div class="hobby-card reveal">
+        <div class="hobby-img"><img src="assets/皇室战争.jpg" alt="皇室战争"></div>
+        <div class="name">皇室战争</div>
+        <div class="note">实时对战 · 卡牌策略</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="glass">
+    <h2 class="section-title"><span class="icon">🏆</span> 竞赛 · 荣誉</h2>
+    <div class="grid-2">
+      <div class="mini-card reveal">
+        <div class="k">竞赛与荣誉</div>
+        <div class="v">
+          · 2020 年全国高中化学奥林匹克竞赛 国家二等奖<br>
+          · 2022/2023/2024 年 校级二等奖学金<br>
+          · 2022 年 院级优秀志愿者<br>
+          · 2022 年「星火杯」篮球比赛 团队一等奖
+        </div>
+      </div>
+      <div class="mini-card reveal">
+        <div class="k">语言</div>
+        <div class="v">
+          CET-6：500<br>
+          普通话流利，可中英双语沟通
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="glass reveal">
+    <h2 class="section-title"><span class="icon">📷</span> 生活掠影</h2>
+    <div class="life-strip">
+      <figure class="life-photo">
+        <img src="assets/去看日出但是是阴天.jpg" alt="去看日出但是是阴天">
+        <figcaption>去看日出 · 但是是阴天</figcaption>
+      </figure>
+      <figure class="life-photo">
+        <img src="assets/我哥的娃一岁了.jpg" alt="我哥的娃一岁了">
+        <figcaption>生活小确幸 · 我哥的娃一岁了</figcaption>
+      </figure>
+      <figure class="life-photo">
+        <img src="assets/生活1.jpg" alt="生活掠影">
+        <figcaption>生活掠影 · 随手拍</figcaption>
+      </figure>
+      <figure class="life-photo">
+        <img src="assets/生活2.jpg" alt="生活掠影">
+        <figcaption>生活掠影 · 随手拍</figcaption>
+      </figure>
+      <figure class="life-photo">
+        <img src="assets/生活3.jpg" alt="生活掠影">
+        <figcaption>生活掠影 · 随手拍</figcaption>
+      </figure>
+      <figure class="life-photo">
+        <img src="assets/生活4.jpg" alt="生活掠影">
+        <figcaption>生活掠影 · 随手拍</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ 联系弹窗 ═══════════════ -->
+<div class="modal-overlay" id="contactModal" onclick="if(event.target===this)closeModal()" aria-hidden="true">
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" onclick="closeModal()" aria-label="关闭">✕</button>
+    <h3 id="modalTitle">📮 联系我</h3>
+    <p class="modal-sub">很高兴认识你！！！</p>
+    <div class="modal-grid">
+      <a class="c-item" href="mailto:yx71387068@163.com">
+        <span class="c-emoji">✉️</span>
+        <div><div class="c-name">邮箱</div><div class="c-val">yx71387068@163.com</div></div>
+      </a>
+      <a class="c-item" href="tel:15171387068">
+        <span class="c-emoji">📞</span>
+        <div><div class="c-name">电话</div><div class="c-val">15171387068</div></div>
+      </a>
+      <a class="c-item" href="https://github.com/yxx-789" target="_blank" rel="noopener">
+        <span class="c-emoji">🐙</span>
+        <div><div class="c-name">GitHub</div><div class="c-val">github.com/yxx-789</div></div>
+      </a>
+      <div class="c-item wechat">
+        <span class="c-emoji">💬</span>
+        <div><div class="c-name">微信</div><div class="c-val">扫码或搜索添加</div>
+          <div class="c-qr">微信二维码<span class="qr-hint">（替换为你的二维码图片）</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ 页脚 ═══════════════ -->
+<footer class="footer">
+  Made with <span class="heart">♥</span> by <strong>xingyao</strong>
+  · <a class="backtop" href="#about" data-view="about">回到顶部 ↑</a>
+</footer>
+
+<script>
+/* ═════════════ 多视图路由（支持 hash 直达） ═════════════ */
+(function () {
+  var views = document.querySelectorAll('.view');
+  var links = document.querySelectorAll('.nav-links a, .backtop');
+
+  function show(name) {
+    name = name || 'about';
+    views.forEach(function (v) {
+      v.classList.toggle('active', v.id === name);
+    });
+    links.forEach(function (a) {
+      a.classList.toggle('active', a.dataset.view === name);
+    });
+    // 入场动效：当前视图内 .reveal 元素交错浮现
+    var v = document.getElementById(name) || views[0];
+    var r = v.querySelectorAll('.reveal');
+    for (var i = 0; i < r.length; i++) r[i].style.animationDelay = (i * 70) + 'ms';
+    if (name === 'about') animateBars();
+  }
+
+  function fromHash() {
+    var h = location.hash.replace(/^#\/?/, '');
+    var valid = ['about', 'education', 'experience', 'works', 'skills'];
+    return valid.indexOf(h) >= 0 ? h : 'about';
+  }
+
+  document.querySelectorAll('.nav-links a').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      e.preventDefault();
+      var name = a.dataset.view;
+      history.replaceState(null, '', '#' + name);
+      show(name);
+    });
+  });
+
+  var bt = document.querySelector('.backtop');
+  if (bt) bt.addEventListener('click', function (e) {
+    e.preventDefault();
+    history.replaceState(null, '', '#about');
+    show('about');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  show(fromHash());
+})();
+
+/* ═════════════ 技能进度条 ═════════════ */
+function animateBars() {
+  document.querySelectorAll('.skill-bar-fill[data-w]:not(.on)').forEach(function (b) {
+    b.classList.add('on');
+    var w = b.getAttribute('data-w');
+    // 先确保初始宽度为 0，再在下一帧变宽，保证过渡动画生效
+    b.style.width = '0';
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () { b.style.width = w + '%'; });
+    });
+  });
+}
+
+/* ═════════════ Hero 打字机（友好问候，打完停留） ═════════════ */
+(function () {
+  var greeting = '你好呀，我是邢耀！希望我们可以一起做一些有意思的事情！';
+  var target = document.getElementById('typeTarget');
+  if (!target) return;
+  var c = 0;
+  (function type() {
+    if (c > greeting.length) return;
+    target.textContent = greeting.slice(0, c);
+    c++;
+    setTimeout(type, 110);
+  })();
+})();
+
+/* ═════════════ 联系弹窗 ═════════════ */
+function openModal() {
+  var m = document.getElementById('contactModal');
+  if (!m) return;
+  m.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeModal() {
+  var m = document.getElementById('contactModal');
+  if (!m) return;
+  m.classList.remove('open');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape') closeModal();
+});
+</script>
+</body>
+</html>
