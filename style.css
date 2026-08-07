@@ -950,8 +950,8 @@ body::before {
   background: #fff;
 }
 .qr-card img {
-  width: 100px;
-  height: 100px;
+  width: 246px;
+  height: 246px;
   object-fit: contain;
   display: block;
 }
