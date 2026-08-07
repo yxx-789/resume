@@ -970,7 +970,7 @@ body::before {
   color: var(--ink);
   transition: all 0.2s;
 }
-a.c-item:hover {
+.c-item:hover {
   border-color: var(--border-glow);
   box-shadow: 0 6px 16px rgba(56, 189, 248, 0.14), 0 8px 22px var(--glow);
   transform: translateY(-2px);
@@ -989,7 +989,7 @@ a.c-item:hover {
   color: var(--ink-strong);
   word-break: break-all;
 }
-.c-item.wechat { align-items: center; }
+.c-item.wechat { align-items: center; cursor: pointer; }
 .c-qr {
   margin-left: auto;
   flex-shrink: 0;
@@ -998,12 +998,7 @@ a.c-item:hover {
   border-radius: 0.5rem;
   overflow: hidden;
   background: #fff;
-  cursor: pointer;
-  transition: transform 0.15s ease;
 }
-.c-qr:hover { transform: scale(1.08); }
-.c-qr:active { transform: scale(0.96); }
-.c-qr:focus-visible { outline: 2px solid var(--border-glow, #38bdf8); outline-offset: 2px; }
 .c-qr img {
   width: 100%;
   height: 100%;
