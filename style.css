@@ -972,20 +972,18 @@ a.c-item:hover {
 }
 .c-qr {
   margin-top: 0.5rem;
-  height: 86px;
-  border: 1px dashed rgba(56, 189, 248, 0.45);
+  width: 104px;
+  height: 104px;
   border-radius: 0.6rem;
-  background: var(--accent-soft);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.78rem;
-  color: var(--ink-soft);
-  text-align: center;
-  gap: 0.15rem;
+  overflow: hidden;
+  background: #fff;
 }
-.qr-hint { font-size: 0.7rem; color: var(--ink-faint); }
+.c-qr img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
 
 /* =========================================================
    页脚
