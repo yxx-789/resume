@@ -970,11 +970,13 @@ a.c-item:hover {
   color: var(--ink-strong);
   word-break: break-all;
 }
+.c-item.wechat { align-items: center; }
 .c-qr {
-  margin-top: 0.5rem;
-  width: 86px;
-  height: 86px;
-  border-radius: 0.6rem;
+  margin-left: auto;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 0.5rem;
   overflow: hidden;
   background: #fff;
 }
