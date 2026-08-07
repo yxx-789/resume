@@ -937,6 +937,25 @@ body::before {
 .modal-close:hover { background: rgba(56, 189, 248, 0.2); color: var(--accent); }
 .modal-card h3 { font-size: 1.15rem; color: var(--ink-strong); margin-bottom: 0.2rem; }
 .modal-sub { font-size: 0.85rem; color: var(--ink-faint); margin-bottom: 1.2rem; }
+
+/* 二维码放大弹窗（叠加在联系弹窗之上） */
+.qr-overlay { z-index: 300; }
+.qr-card {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 1.6rem;
+  background: #fff;
+}
+.qr-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  display: block;
+}
+.qr-hint-text { font-size: 0.78rem; color: var(--ink-soft); margin: 0; }
 .modal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; }
 @media (max-width: 520px) { .modal-grid { grid-template-columns: 1fr; } }
 .c-item {
@@ -979,7 +998,12 @@ a.c-item:hover {
   border-radius: 0.5rem;
   overflow: hidden;
   background: #fff;
+  cursor: pointer;
+  transition: transform 0.15s ease;
 }
+.c-qr:hover { transform: scale(1.08); }
+.c-qr:active { transform: scale(0.96); }
+.c-qr:focus-visible { outline: 2px solid var(--border-glow, #38bdf8); outline-offset: 2px; }
 .c-qr img {
   width: 100%;
   height: 100%;

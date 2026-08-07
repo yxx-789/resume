@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>邢耀 · AI 产品经理</title>
   <meta name="description" content="邢耀 — AI 产品经理，百度 AI 产品实习，独立全栈开发 AI 创作工作台。">
-  <link rel="stylesheet" href="style.css?v=20260807">
+  <link rel="stylesheet" href="style.css?v=20260807-2">
 </head>
 <body>
 
@@ -481,9 +481,18 @@
       <div class="c-item wechat">
         <span class="c-emoji">💬</span>
         <div><div class="c-name">微信</div><div class="c-val">扫码或搜索添加</div></div>
-        <div class="c-qr"><img src="assets/二维码.jpg" alt="微信二维码" loading="lazy" width="40" height="40"></div>
+        <div class="c-qr" role="button" tabindex="0" title="点击放大二维码" onclick="openQrModal()"><img src="assets/二维码.jpg" alt="微信二维码，点击放大" loading="lazy" width="40" height="40"></div>
       </div>
     </div>
+  </div>
+</div>
+
+<!-- ═══════════════ 二维码放大弹窗 ═══════════════ -->
+<div class="modal-overlay qr-overlay" id="qrModal" onclick="if(event.target===this)closeQrModal()" aria-hidden="true">
+  <div class="modal-card qr-card" role="dialog" aria-modal="true" aria-label="微信二维码">
+    <button class="modal-close" onclick="closeQrModal()" aria-label="关闭">✕</button>
+    <img src="assets/二维码.jpg" alt="微信二维码" width="100" height="100">
+    <p class="qr-hint-text">长按 / 截图保存后，用微信扫一扫添加</p>
   </div>
 </div>
 
@@ -578,10 +587,36 @@ function closeModal() {
   var m = document.getElementById('contactModal');
   if (!m) return;
   m.classList.remove('open');
-  document.body.style.overflow = '';
+  closeQrModal();
+}
+
+/* ═════════════ 二维码放大弹窗 ═════════════ */
+function openQrModal() {
+  var m = document.getElementById('qrModal');
+  if (!m) return;
+  m.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeQrModal() {
+  var m = document.getElementById('qrModal');
+  if (!m) return;
+  m.classList.remove('open');
+  if (!document.querySelector('.modal-overlay.open')) document.body.style.overflow = '';
 }
 document.addEventListener('keydown', function (e) {
-  if (e.key === 'Escape') closeModal();
+  if (e.key === 'Escape') {
+    var qr = document.getElementById('qrModal');
+    if (qr && qr.classList.contains('open')) {
+      closeQrModal();
+    } else {
+      closeModal();
+    }
+  }
+  var el = document.activeElement;
+  if (el && el.classList && el.classList.contains('c-qr') && (e.key === 'Enter' || e.key === ' ')) {
+    e.preventDefault();
+    openQrModal();
+  }
 });
 </script>
 </body>
